@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+function myFunction(){
+var number1=100;
+var number2=100;
+while (number1<1000) {
+	stringNumber1=number1+'';
+	Number1Digit1=stringNumber1.slice(0,1);
+	Number1Digit2=stringNumber1.slice(1,2);
+	Number1Digit3=stringNumber1.slice(2,3);
+	while(number2<1000) {
+		stringNumber2=number2+'';
+		Number2Digit1=stringNumber2.slice(0,1);
+		Number2Digit2=stringNumber2.slice(1,2);
+		Number2Digit3=stringNumber2.slice(2,3);
+		if (Number1Digit2===Number1Digit3 && Number1Digit2===Number2Digit1){
+			summa = number1*1+number2*1;
+			stringSumma = summa+'';
+			summaDigit1=stringSumma.slice(0,1);
+			summaDigit2=stringSumma.slice(1,2);
+			summaDigit3=stringSumma.slice(2,3);
+			summaDigit4=stringSumma.slice(3,4);
+			if (summa>999 && summaDigit2==summaDigit3 && summaDigit2==summaDigit4 && Number1Digit2==summaDigit1 &&  summaDigit2!=Number1Digit1 && summaDigit2!=Number1Digit2 && summaDigit2!=Number1Digit2 && summaDigit2!=Number1Digit1 && summaDigit2!=Number1Digit2 && summaDigit2!=Number1Digit3) {
+				answer="answer: first number is "+stringNumber1+" and second number is "+stringNumber2+", their summ is "+stringSumma;
+				console.log(answer);
+				document.getElementById("myid").innerHTML=answer;
+			}
+		}
+		number2++;
+	}
+	number2=100;
+	number1=number1*1+1;
+}
+}
+</script>
+<p id="given">BAA+ABC=ADDD</p>
+<p id="myid"></p>
+<p id="comment">To view algorithm, right click on blank part of the page, then (Chrome) press "view source" or press CTRL+U. Firefox users should press "view page source" or press CTRL+U</p>
+<p id="comment-ru">Для просмотра алгоритма, нажмите правой кнопкой мыши по свободной части страницы, далее (в Хроме) выберите "Просмотр кода страницы" или нажмите CTRL+U. Пользователи Firefox должны выбрать "Исходный код страницы" или нажать CTRL+U</p>
+<button onclick="myFunction()">solve!</button>
+
+</body>
+</html>
