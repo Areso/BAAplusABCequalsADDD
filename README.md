@@ -1,2 +1,2 @@
 # BAAplusABCequalsADDD
-Mathematical fuzzle. I solved it
+Mathematical puzzle and excercise. It's how I solved it
